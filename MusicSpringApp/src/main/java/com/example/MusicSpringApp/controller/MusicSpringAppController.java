@@ -21,6 +21,11 @@ public class MusicSpringAppController {
         return musicService.getAll();
     }
 
+    @PostMapping("/add")
+    public TrackPodcast add(@RequestBody TrackPodcast trackPodcast) {
+        return musicService.add(trackPodcast);
+    }
+
 
 
 
