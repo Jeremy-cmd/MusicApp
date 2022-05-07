@@ -2,21 +2,19 @@ package com.example.MusicSpringApp.dto;
 
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name="trackspodcasts")
 public class TrackPodcast {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String imageURI;
+    private String imageuri;
     private String uri;
-    private String artistName;
+    private String artistname;
 
     public String getName() {
         return name;
@@ -26,12 +24,12 @@ public class TrackPodcast {
         this.name = name;
     }
 
-    public String getImageURI() {
-        return imageURI;
+    public String getImageuri() {
+        return imageuri;
     }
 
-    public void setImageURI(String imageURI) {
-        this.imageURI = imageURI;
+    public void setImageuri(String imageuri) {
+        this.imageuri = imageuri;
     }
 
     public String getUri() {
@@ -42,11 +40,11 @@ public class TrackPodcast {
         this.uri = uri;
     }
 
-    public String getArtistName() {
-        return artistName;
+    public String getArtistname() {
+        return artistname;
     }
 
-    public void setArtistName(String artistName) {
-        this.artistName = artistName;
+    public void setArtistname(String artistname) {
+        this.artistname = artistname;
     }
 }
