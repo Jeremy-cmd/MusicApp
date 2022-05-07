@@ -24,6 +24,14 @@ public class TrackPodcast {
         this.name = name;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
     public String getImageuri() {
         return imageuri;
     }
