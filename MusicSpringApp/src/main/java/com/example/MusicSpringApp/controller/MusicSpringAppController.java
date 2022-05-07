@@ -26,6 +26,13 @@ public class MusicSpringAppController {
         return musicService.add(trackPodcast);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable String id) {
+        int trackId = Integer.parseInt(id);
+        musicService.delete(trackId);
+
+    }
+
 
 
 
