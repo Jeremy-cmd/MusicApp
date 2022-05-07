@@ -19,6 +19,11 @@ public class MusicServiceImpl implements MusicService {
     }
 
     @Override
+    public void delete(int id) {
+        dao.deleteById(id);
+    }
+
+    @Override
     public List<TrackPodcast> getAll() {
         return dao.findAll();
     }

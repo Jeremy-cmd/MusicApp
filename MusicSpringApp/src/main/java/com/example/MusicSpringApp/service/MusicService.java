@@ -8,5 +8,7 @@ public interface MusicService {
 
     public TrackPodcast add(TrackPodcast trackPodcast);
 
+    public void delete(int id);
+
     public List<TrackPodcast> getAll();
 }
